@@ -40,7 +40,7 @@ features                                  :
 
   - title                                 : Race With Friends
     description                           : Create or join run clubs, add friends, and see who's running in real-time.
-    fontawesome_icon_name                 : people
+    fontawesome_icon_name                 : people-group
     
   - title                                 : Compete Globally
     description                           : Join ranked races to climb the leaderboard, or run casually at your own pace. Every race counts!
@@ -48,7 +48,7 @@ features                                  :
 
   - title                                 : Track Your Progress
     description                           : Monitor your stats, improve your pace, and watch your rank grow as you complete more races.
-    fontawesome_icon_name                 : person-running
+    fontawesome_icon_name                 : fa-person-running
 
   # - title                                 : Automatic Icon and Metadata
   #   description                           : Enter iOS app ID in the _config.yml file to automatically fetch app icon, price and App Store Link.

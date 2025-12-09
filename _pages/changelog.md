@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Terms of Service New
+title: Terms of Service
 include_in_header: true
 ---
 

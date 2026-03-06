@@ -1,3 +1,431 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Primary SEO -->
+  <title>RunTogether — Live Virtual Running Races | Free iOS App</title>
+  <meta name="description" content="Run with real people in real time. Create live virtual races, challenge friends, and compete on global leaderboards with RunTogether — the free multiplayer running app for iOS.">
+  <meta name="keywords" content="virtual running app, run with friends online, multiplayer running, live running race, social running app, running leaderboard, run club app, iOS running app">
+  <meta name="author" content="Kenneth Alvarez">
+  <link rel="canonical" href="https://runtogetherlive.com/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://runtogetherlive.com/">
+  <meta property="og:title" content="RunTogether: Live Virtual Running Races">
+  <meta property="og:description" content="The only running app where you race with real people — live. Create runs, invite friends, and compete globally from wherever you are. Free on the App Store.">
+  <meta property="og:image" content="https://runtogetherlive.com/assets/headerimage.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="RunTogether">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://runtogetherlive.com/">
+  <meta name="twitter:title" content="RunTogether: Live Virtual Running Races">
+  <meta name="twitter:description" content="Race with real people in real time. Free on the App Store.">
+  <meta name="twitter:image" content="https://runtogetherlive.com/assets/headerimage.png">
+
+  <!-- Apple Smart App Banner -->
+  <meta name="apple-itunes-app" content="app-id=6756319601">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="assets/running_app_logo.png">
+  <link rel="apple-touch-icon" href="assets/running_app_logo.png">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "RunTogether: Live Virtual Runs",
+    "description": "The multiplayer running app that lets you create live virtual races with friends or compete globally on the leaderboard in real time.",
+    "applicationCategory": "HealthApplication",
+    "operatingSystem": "iOS",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0",
+      "ratingCount": "1",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "url": "https://apps.apple.com/us/app/runtogether-live-virtual-runs/id6756319601",
+    "downloadUrl": "https://apps.apple.com/us/app/runtogether-live-virtual-runs/id6756319601",
+    "author": {
+      "@type": "Person",
+      "name": "Kenneth Alvarez"
+    }
+  }
+  </script>
+
+  <!-- Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+
+  <!-- Swiper CSS (before fonts to avoid FOUC on gallery) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <div class="nav-logo">
+        <img src="assets/running_app_logo.png" alt="RunTogether app icon" class="nav-icon" width="36" height="36">
+        <span class="nav-name">RunTogether</span>
+      </div>
+      <ul class="nav-links" role="list">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="#screenshots">Screenshots</a></li>
+      </ul>
+      <a href="https://apps.apple.com/us/app/runtogether-live-virtual-runs/id6756319601"
+         class="btn-nav"
+         target="_blank"
+         rel="noopener noreferrer"
+         aria-label="Download RunTogether on the App Store">
+        Download Free
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div class="nav-mobile-menu" id="nav-mobile-menu" role="menu">
+      <a href="#features" role="menuitem">Features</a>
+      <a href="#how-it-works" role="menuitem">How It Works</a>
+      <a href="#screenshots" role="menuitem">Screenshots</a>
+      <a href="https://apps.apple.com/us/app/runtogether-live-virtual-runs/id6756319601"
+         class="btn-mobile-dl"
+         target="_blank"
+         rel="noopener noreferrer"
+         role="menuitem">
+        Download Free on App Store
+      </a>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="hero" aria-label="RunTogether hero">
+
+      <div class="hero-blobs" aria-hidden="true">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+      </div>
+
+      <div class="hero-runners" aria-hidden="true">
+        <div class="runner-dot"></div>
+        <div class="runner-dot"></div>
+        <div class="runner-dot"></div>
+        <div class="runner-dot"></div>
+        <div class="runner-dot"></div>
+      </div>
+
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="badge-dot" aria-hidden="true"></span>
+            Available Now on the App Store
+          </div>
+
+          <h1 class="hero-title">
+            Run<br>
+            <span class="gradient-text">Together.</span><br>
+            Race<br>Anywhere.
+          </h1>
+
+          <p class="hero-sub">
+            The only running app where you race with real people — live.
+            Create runs, invite friends, and compete globally from wherever you are.
+          </p>
+
+          <div class="hero-actions">
+            <a href="https://apps.apple.com/us/app/runtogether-live-virtual-runs/id6756319601"
+               class="btn-primary"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="Download RunTogether free on the App Store">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+              </svg>
+              Download Free on App Store
+            </a>
+
+            <div class="hero-rating" aria-label="Rated 5 stars on the App Store">
+              <span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+              <span>5.0 on the App Store</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-device" aria-hidden="true">
+          <div class="phone-frame hero-phone">
+            <div class="phone-notch"></div>
+            <img
+              class="phone-screen"
+              id="hero-screenshot"
+              src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+              alt="RunTogether app — live race screen"
+              loading="eager"
+              style="display:none;">
+            <div class="phone-screen-placeholder" id="hero-placeholder">
+              Add screenshots to<br><code>assets/screenshot/</code>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-scroll" aria-hidden="true">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ===== SOCIAL PROOF ===== -->
+    <section class="stats" id="social-proof" aria-label="App highlights">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-card reveal" data-delay="1">
+            <div class="stat-icon" aria-hidden="true">&#127939;</div>
+            <div class="stat-label">Live Racing</div>
+            <div class="stat-sub">Race with real runners worldwide</div>
+          </div>
+          <div class="stat-card reveal" data-delay="2">
+            <div class="stat-icon" aria-hidden="true">&#11088;</div>
+            <div class="stat-label">5.0 Rating</div>
+            <div class="stat-sub">Top rated on the App Store</div>
+          </div>
+          <div class="stat-card reveal" data-delay="3">
+            <div class="stat-icon" aria-hidden="true">&#127758;</div>
+            <div class="stat-label">Free to Download</div>
+            <div class="stat-sub">Start your first race today</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== HOW IT WORKS ===== -->
+    <section class="how-it-works" id="how-it-works" aria-label="How RunTogether works">
+      <div class="container">
+        <div class="section-label">Simple by Design</div>
+        <h2 class="section-title">Start Racing in<br><span class="gradient-text">3 Steps</span></h2>
+        <div class="steps-grid">
+          <div class="step-card reveal" data-delay="1">
+            <span class="step-num" aria-hidden="true">01</span>
+            <h3>Create or Join a Run</h3>
+            <p>Set your distance, pick your pace goal, and start a public race or a private run club. Goes live instantly — no setup headaches.</p>
+          </div>
+          <div class="step-card reveal" data-delay="2">
+            <span class="step-num" aria-hidden="true">02</span>
+            <h3>Invite Your Friends</h3>
+            <p>Share your race link. Friends join in seconds — no complicated setup, no waiting. They are at the start line before you blink.</p>
+          </div>
+          <div class="step-card reveal" data-delay="3">
+            <span class="step-num" aria-hidden="true">03</span>
+            <h3>Race Live Together</h3>
+            <p>Hit start and go. See every runner's position update in real time. The leaderboard tracks every step you take.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FEATURES ===== -->
+    <section class="features" id="features" aria-label="App features">
+      <div class="container">
+        <div class="section-label">What Makes It Different</div>
+        <h2 class="section-title">Built for<br><span class="gradient-text">Real Runners</span></h2>
+
+        <!-- Feature 1 -->
+        <div class="feature-row reveal" data-dir="left" aria-labelledby="feat1-title">
+          <div class="feature-device">
+            <div class="phone-frame">
+              <div class="phone-notch" aria-hidden="true"></div>
+              <img
+                class="phone-screen feature-screenshot"
+                data-index="1"
+                src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                alt="RunTogether live race map showing friends positions"
+                loading="lazy"
+                style="display:none;">
+              <div class="phone-screen-placeholder feature-placeholder">Screenshot coming soon</div>
+            </div>
+          </div>
+          <div class="feature-content">
+            <span class="feature-icon" aria-hidden="true">&#127939;</span>
+            <h3 class="feature-title" id="feat1-title">Your Friends Are Waiting at the Start Line</h3>
+            <p class="feature-text">
+              Create a run club, add your crew, and see every runner's live position as you race.
+              Whether you are miles apart or running the same trail, you are always racing together.
+            </p>
+            <ul class="feature-list" role="list">
+              <li>Real-time runner positions on the live race map</li>
+              <li>Create public races or private run clubs</li>
+              <li>Add friends and see their runs instantly</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="feature-row feature-row-reverse reveal" data-dir="right" aria-labelledby="feat2-title">
+          <div class="feature-content">
+            <span class="feature-icon" aria-hidden="true">&#127942;</span>
+            <h3 class="feature-title" id="feat2-title">Climb the Global Leaderboard</h3>
+            <p class="feature-text">
+              Join ranked races against runners worldwide. Every finish line counts toward your
+              global rank. Crush a casual run or go all-in on a ranked race — you decide the stakes.
+            </p>
+            <ul class="feature-list" role="list">
+              <li>Ranked global leaderboard updated live</li>
+              <li>Casual and competitive race modes</li>
+              <li>Every race counts toward your world rank</li>
+            </ul>
+          </div>
+          <div class="feature-device">
+            <div class="phone-frame">
+              <div class="phone-notch" aria-hidden="true"></div>
+              <img
+                class="phone-screen feature-screenshot"
+                data-index="2"
+                src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                alt="RunTogether global leaderboard"
+                loading="lazy"
+                style="display:none;">
+              <div class="phone-screen-placeholder feature-placeholder">Screenshot coming soon</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="feature-row reveal" data-dir="left" aria-labelledby="feat3-title">
+          <div class="feature-device">
+            <div class="phone-frame">
+              <div class="phone-notch" aria-hidden="true"></div>
+              <img
+                class="phone-screen feature-screenshot"
+                data-index="3"
+                src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                alt="RunTogether progress tracking and stats"
+                loading="lazy"
+                style="display:none;">
+              <div class="phone-screen-placeholder feature-placeholder">Screenshot coming soon</div>
+            </div>
+          </div>
+          <div class="feature-content">
+            <span class="feature-icon" aria-hidden="true">&#128200;</span>
+            <h3 class="feature-title" id="feat3-title">Watch Yourself Get Faster</h3>
+            <p class="feature-text">
+              Every run is tracked. Monitor your pace, distance, personal bests, and rank growth
+              over time. Your stats tell the story of how far you have come.
+            </p>
+            <ul class="feature-list" role="list">
+              <li>Full run history with pace and distance</li>
+              <li>Personal best tracking across all races</li>
+              <li>Watch your global rank climb over time</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== SCREENSHOT GALLERY ===== -->
+    <section class="gallery" id="screenshots" aria-label="App screenshots">
+      <div class="container">
+        <div class="section-label">See It In Action</div>
+        <h2 class="section-title">Every screen,<br><span class="gradient-text">designed for runners</span></h2>
+      </div>
+
+      <div class="swiper gallery-swiper" role="region" aria-label="Screenshot gallery">
+        <div class="swiper-wrapper" id="gallery-wrapper">
+          <!-- Populated by main.js -->
+        </div>
+        <div class="swiper-pagination" aria-label="Gallery page indicator"></div>
+      </div>
+
+      <div class="container" id="gallery-fallback" style="display:none; text-align:center; padding:40px 24px 20px;">
+        <p style="color:var(--muted); font-family:'DM Mono',monospace; font-size:13px; line-height:1.8;">
+          Add your app screenshots to <code style="color:var(--electric)">assets/screenshot/</code>
+          and update the <code style="color:var(--electric)">SCREENSHOTS</code> array in
+          <code style="color:var(--electric)">assets/js/main.js</code>.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== FINAL CTA ===== -->
+    <section class="cta-section" id="download" aria-label="Download RunTogether">
+      <div class="cta-blobs" aria-hidden="true">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+      </div>
+      <div class="container cta-inner">
+        <div class="cta-badge" aria-hidden="true">Free Download</div>
+        <h2 class="cta-title">Ready<br>to Run?</h2>
+        <p class="cta-sub">Download free and join your first live race in minutes. No subscription, no catch — just running.</p>
+        <a href="https://apps.apple.com/us/app/runtogether-live-virtual-runs/id6756319601"
+           class="btn-primary btn-large"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="Download RunTogether free on the App Store">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+          </svg>
+          Download Free on App Store
+        </a>
+        <p class="cta-fine">iOS only &middot; Requires iOS 16.0 or later &middot; Free</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="assets/running_app_logo.png" alt="RunTogether" class="footer-icon" width="36" height="36" loading="lazy">
+        <div>
+          <div class="footer-name">RunTogether</div>
+          <div class="footer-tagline">Run Together. Race Anywhere.</div>
+        </div>
+      </div>
+
+      <nav class="footer-links" aria-label="Footer links">
+        <a href="/privacypolicy" target="_self">Privacy Policy</a>
+        <a href="/termsofservice" target="_self">Terms of Service</a>
+        <a href="mailto:kenprimeventures@gmail.com">Contact</a>
+        <a href="https://apps.apple.com/us/app/runtogether-live-virtual-runs/id6756319601"
+           target="_blank" rel="noopener noreferrer">App Store</a>
+      </nav>
+
+      <div class="footer-copy">
+        &copy; 2026 Kenneth Alvarez &middot; California, USA
+      </div>
+    </div>
+  </footer>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- Main JS -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>

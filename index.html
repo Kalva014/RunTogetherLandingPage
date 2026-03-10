@@ -37,34 +37,141 @@
   <link rel="shortcut icon" href="assets/running_app_logo.png">
   <link rel="apple-touch-icon" href="assets/running_app_logo.png">
 
-  <!-- JSON-LD Structured Data -->
+  <!-- JSON-LD Structured Data: WebSite -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
+    "@type": "WebSite",
     "name": "RunTogether: Live Virtual Runs",
-    "description": "Your real movement powers a live avatar. Race outdoors with GPS, on a treadmill, or on a StairMaster with real people in real time. Ranked leagues, run clubs, ghost mode.",
+    "url": "https://runtogetherlvr.app/",
+    "description": "Free multiplayer running app for iOS. Race friends with GPS, treadmill, or StairMaster in real time. Ranked leagues, run clubs, ghost mode.",
+    "publisher": {
+      "@type": "Person",
+      "name": "Kenneth Alvarez",
+      "email": "kenprimeventures@gmail.com"
+    }
+  }
+  </script>
+
+  <!-- JSON-LD Structured Data: MobileApplication -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MobileApplication",
+    "name": "RunTogether: Live Virtual Runs",
+    "alternateName": ["RunTogether", "Run Together App", "RunTogether Live Virtual Runs"],
+    "description": "Your real movement powers a live avatar. Race friends outdoors with GPS, on a treadmill, or on a StairMaster — in real time. Ranked leagues from Bronze to Champion, private run clubs, ghost mode challenges, and live leaderboards. Free on the App Store.",
     "applicationCategory": "HealthApplication",
-    "operatingSystem": "iOS",
-    "offers": [
-      {"@type": "Offer", "price": "0", "priceCurrency": "USD", "description": "7-day free trial"},
-      {"@type": "Offer", "price": "4.99", "priceCurrency": "USD", "description": "Weekly subscription"},
-      {"@type": "Offer", "price": "9.99", "priceCurrency": "USD", "description": "Monthly subscription"},
-      {"@type": "Offer", "price": "49.99", "priceCurrency": "USD", "description": "Yearly subscription"}
-    ],
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "5.0",
-      "ratingCount": "1",
-      "bestRating": "5",
-      "worstRating": "1"
+    "applicationSubCategory": "Running, Fitness, Multiplayer Sports",
+    "operatingSystem": "iOS 16.0 or later",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD",
+      "description": "Free download with optional subscription. 7-day free trial included."
     },
-    "url": "https://apps.apple.com/us/app/runtogether-live-virtual-runs/id6756319601",
+    "url": "https://runtogetherlvr.app/",
     "downloadUrl": "https://apps.apple.com/us/app/runtogether-live-virtual-runs/id6756319601",
+    "installUrl": "https://apps.apple.com/us/app/runtogether-live-virtual-runs/id6756319601",
+    "screenshot": "https://runtogetherlvr.app/assets/headerimage.png",
+    "featureList": [
+      "Live multiplayer running races",
+      "GPS outdoor tracking",
+      "Treadmill support",
+      "StairMaster support",
+      "Ranked leagues (Bronze to Champion)",
+      "Private run clubs",
+      "Ghost mode challenges",
+      "Real-time leaderboard",
+      "Live pace indicators",
+      "Custom race distances"
+    ],
     "author": {
       "@type": "Person",
+      "name": "Kenneth Alvarez",
+      "email": "kenprimeventures@gmail.com"
+    },
+    "publisher": {
+      "@type": "Person",
       "name": "Kenneth Alvarez"
-    }
+    },
+    "inLanguage": "en-US",
+    "countriesSupported": "US",
+    "softwareVersion": "1.0"
+  }
+  </script>
+
+  <!-- JSON-LD Structured Data: FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Is RunTogether free to download?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes — RunTogether is free to download on the App Store. You get a 7-day free trial with full access to all features, including live ranked races, run clubs, and ghost mode. After the trial, subscribe weekly ($4.99), monthly ($9.99), or yearly ($49.99). Cancel anytime."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I race friends online with RunTogether?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. RunTogether is a live multiplayer running app — race friends in real time, create private run clubs, or join public ranked races against runners worldwide. Everyone's avatar moves as they move, updated every step."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does RunTogether work on a treadmill?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. RunTogether supports treadmill running with manual speed input — no GPS required. Enter your treadmill speed and the app tracks your movement in real time, powering your live avatar just like outdoor GPS running."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does RunTogether work on a StairMaster?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. RunTogether has a dedicated StairMaster mode with 20 intensity levels. Set your machine level and race other climbers in real time."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do ranked leagues work in RunTogether?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "RunTogether uses a skill-based ranked system with six tiers: Bronze, Silver, Gold, Platinum, Diamond, and Champion. Every race earns or costs League Points based on your finish position. You're matched against runners at a similar pace."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is Ghost Mode in RunTogether?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ghost Mode lets you race a recording of yourself — your personal record (PR) or any previous run. There are also AI Pacers at Bronze through Platinum difficulty for solo training sessions."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What iPhone is required for RunTogether?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "RunTogether requires iOS 16.0 or later. It is currently available on iPhone only."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What race distances does RunTogether support?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "RunTogether supports 1 mile, 5K, 10K, half marathon, full marathon, and custom distances of your choice."
+        }
+      }
+    ]
   }
   </script>
 
@@ -95,6 +202,7 @@
         <li><a href="#features">Features</a></li>
         <li><a href="#how-it-works">How It Works</a></li>
         <li><a href="#screenshots">Screenshots</a></li>
+        <li><a href="#faq">FAQ</a></li>
       </ul>
       <a href="https://apps.apple.com/us/app/runtogether-live-virtual-runs/id6756319601"
          class="btn-nav"
@@ -155,7 +263,7 @@
           </h1>
 
           <p class="hero-sub">
-            Your real movement powers a live avatar. Run outdoors with GPS or indoors on a treadmill.
+            <strong>RunTogether</strong> is the live multiplayer running app for iPhone. Run outdoors with GPS or indoors on a treadmill or StairMaster.
             You see other runners moving in real time — and they see you.
           </p>
           <p class="hero-sub" style="margin-top:0.5rem; font-style:italic; color:var(--muted);">
@@ -409,6 +517,73 @@
       </div>
     </section>
 
+    <!-- ===== FAQ ===== -->
+    <section class="faq-section" id="faq" aria-label="Frequently asked questions about RunTogether">
+      <div class="container">
+        <div class="section-label">Got Questions</div>
+        <h2 class="section-title">FAQ</h2>
+        <div class="faq-grid">
+
+          <details class="faq-item reveal" open>
+            <summary class="faq-q">Is RunTogether free to download?</summary>
+            <div class="faq-a">
+              <p>Yes — RunTogether is free to download on the App Store. You get a <strong>7-day free trial</strong> with full access to all features, including live ranked races, run clubs, and ghost mode. After the trial, you can subscribe weekly ($4.99), monthly ($9.99), or yearly ($49.99). Cancel anytime.</p>
+            </div>
+          </details>
+
+          <details class="faq-item reveal">
+            <summary class="faq-q">Can I race friends online with RunTogether?</summary>
+            <div class="faq-a">
+              <p>Yes. RunTogether is a <strong>live multiplayer running app</strong> — you can race friends in real time, create private run clubs with your crew, or jump into public ranked races against other runners worldwide. Everyone's avatar moves as they move, updated every step.</p>
+            </div>
+          </details>
+
+          <details class="faq-item reveal">
+            <summary class="faq-q">Does RunTogether work on a treadmill?</summary>
+            <div class="faq-a">
+              <p>Yes. RunTogether supports <strong>treadmill running</strong> with manual speed input — no GPS required. You enter your treadmill speed and the app tracks your movement in real time, powering your live avatar just like outdoor GPS running. You can race other treadmill runners or mix with outdoor runners.</p>
+            </div>
+          </details>
+
+          <details class="faq-item reveal">
+            <summary class="faq-q">Does RunTogether work on a StairMaster?</summary>
+            <div class="faq-a">
+              <p>Yes. RunTogether has a dedicated <strong>StairMaster mode</strong> with 20 intensity levels. Set your machine level and race other climbers in real time. It's the only app that turns your StairMaster session into a live multiplayer competition.</p>
+            </div>
+          </details>
+
+          <details class="faq-item reveal">
+            <summary class="faq-q">How do ranked leagues work?</summary>
+            <div class="faq-a">
+              <p>RunTogether uses a <strong>skill-based ranked system</strong> with six tiers: Bronze, Silver, Gold, Platinum, Diamond, and Champion. Every race earns or costs League Points based on your finish position. You're matched against runners at a similar pace, so the competition is always fair and meaningful.</p>
+            </div>
+          </details>
+
+          <details class="faq-item reveal">
+            <summary class="faq-q">What is Ghost Mode in RunTogether?</summary>
+            <div class="faq-a">
+              <p><strong>Ghost Mode</strong> lets you race a recording of yourself — your personal record (PR) or any previous run. There are also AI Pacers at Bronze through Platinum difficulty if you want a challenge without waiting for other runners. Perfect for solo training sessions.</p>
+            </div>
+          </details>
+
+          <details class="faq-item reveal">
+            <summary class="faq-q">What iPhone is required for RunTogether?</summary>
+            <div class="faq-a">
+              <p>RunTogether requires <strong>iOS 16.0 or later</strong>. It's currently available on iPhone only. The app is portrait-locked for safety while running.</p>
+            </div>
+          </details>
+
+          <details class="faq-item reveal">
+            <summary class="faq-q">What race distances does RunTogether support?</summary>
+            <div class="faq-a">
+              <p>You can race <strong>1 mile, 5K, 10K, half marathon, full marathon, or a custom distance</strong> of your choice. Run clubs can set their own distance for group runs.</p>
+            </div>
+          </details>
+
+        </div>
+      </div>
+    </section>
+
     <!-- ===== FINAL CTA ===== -->
     <section class="cta-section" id="download" aria-label="Download RunTogether: Live Virtual Runs">
       <div class="cta-blobs" aria-hidden="true">
@@ -470,6 +645,17 @@
         <a href="https://apps.apple.com/us/app/runtogether-live-virtual-runs/id6756319601"
            target="_blank" rel="noopener noreferrer">App Store</a>
       </nav>
+
+      <div class="footer-ph">
+        <a href="https://www.producthunt.com/products/runtogether-live-virtual-runs?embed=true&utm_source=badge-featured&utm_medium=badge&utm_campaign=badge-runtogether-live-virtual-runs-2"
+           target="_blank"
+           rel="noopener noreferrer">
+          <img alt="RunTogether: Live Virtual Runs on Product Hunt"
+               width="250" height="54"
+               src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1094767&theme=light&t=1773175655404"
+               loading="lazy">
+        </a>
+      </div>
 
       <div class="footer-copy">
         &copy; 2026 Kenneth Alvarez &middot; California, USA

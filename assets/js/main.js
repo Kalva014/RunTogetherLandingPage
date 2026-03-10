@@ -14,10 +14,11 @@
    ===================================================== */
 const SCREENSHOTS = [
   'assets/screenshot/live_running_view_screenshot.png', // [0] Hero
-  'assets/screenshot/share_run_screenshot.png',         // [1] Feature 1 — live running
+  'assets/screenshot/live_racing_view.PNG',             // [1] Feature 1 — live running
   'assets/screenshot/ranked_leaderboard_breakdown.PNG', // [2] Feature 2 — ranked leagues
   'assets/screenshot/run_club_details_view.PNG',        // [3] Feature 3 — run clubs
   'assets/screenshot/stairmaster_results_view.PNG',     // [4] Gallery only
+  'assets/screenshot/share_run_screenshot.png',         // [5] Gallery only
 ];
 
 const APP_STORE_URL = 'https://apps.apple.com/us/app/runtogether-live-virtual-runs/id6756319601';

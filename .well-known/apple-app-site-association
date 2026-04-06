@@ -1,0 +1,17 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": [
+          "VUYG66828A.com.KennethAlvarez.RunTogether"
+        ],
+        "components": [
+          {
+            "/": "/join/*",
+            "comment": "Race join links — /join/{raceUUID}"
+          }
+        ]
+      }
+    ]
+  }
+}

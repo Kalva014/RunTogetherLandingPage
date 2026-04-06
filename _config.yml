@@ -143,3 +143,6 @@ collections:
 
 # Markdown rendering
 markdown: kramdown
+
+include:
+  - .well-known

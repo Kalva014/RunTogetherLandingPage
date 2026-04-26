@@ -1387,6 +1387,31 @@ code {
   line-height: 1;
 }
 
+.pricing-intro {
+  margin: 0 0 14px;
+  color: var(--subtle);
+  font-family: 'DM Mono', monospace;
+  font-size: 12px;
+  letter-spacing: 0.06em;
+}
+
+.pricing-badge-best {
+  margin-bottom: 6px;
+  color: var(--electric);
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.pricing-sub {
+  margin-top: 4px;
+  color: var(--muted);
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.04em;
+}
+
 .cta-fine {
   margin: 16px 0 0;
   color: var(--subtle);

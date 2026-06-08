@@ -106,38 +106,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     capture('funnel_page3_view', { plan_selected: planFromUrl });
 
-    // Modal — bulletproof close (button, backdrop, ESC, anywhere outside inner)
-    const why = document.getElementById('why-link');
-    const modal = document.getElementById('reserve-modal');
-    const closeBtn = document.getElementById('modal-close');
-
-    function openModal() {
-      if (!modal) return;
-      modal.hidden = false;
-      document.body.style.overflow = 'hidden';
-      capture('funnel_page3_modal_opened', { plan_selected: planFromUrl });
-    }
-    function closeModal() {
-      if (!modal) return;
-      modal.hidden = true;
-      document.body.style.overflow = '';
-    }
-
-    if (why) {
-      why.addEventListener('click', (e) => { e.preventDefault(); openModal(); });
-    }
-    if (closeBtn) {
-      closeBtn.addEventListener('click', (e) => { e.preventDefault(); closeModal(); });
-    }
-    if (modal) {
-      modal.addEventListener('click', (e) => {
-        // Close on any click that isn't inside the inner card
-        if (!e.target.closest('.reserve-modal-inner')) closeModal();
-      });
-    }
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape' && modal && !modal.hidden) closeModal();
-    });
+    // Modal removed — reframed Page 3 as direct waitlist join.
 
     // ---- Google Form embed setup ----
     // After creating the form (see GOOGLE_FORMS_SETUP.md), paste:

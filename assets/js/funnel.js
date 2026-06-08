@@ -102,23 +102,42 @@ document.addEventListener('DOMContentLoaded', () => {
     if (planChip) {
       planChip.textContent = planFromUrl === 'monthly'
         ? 'Monthly · $9.99/mo · 30-day trial'
-        : 'Annual · $79.99/yr · 30-day trial';
+        : 'Annual · $49.99/yr · 30-day trial';
     }
     capture('funnel_page3_view', { plan_selected: planFromUrl });
 
-    // Modal
+    // Modal — bulletproof close (button, backdrop, ESC, anywhere outside inner)
     const why = document.getElementById('why-link');
     const modal = document.getElementById('reserve-modal');
-    const close = document.getElementById('modal-close');
-    if (why && modal) {
-      why.addEventListener('click', (e) => {
-        e.preventDefault();
-        modal.hidden = false;
-        capture('funnel_page3_modal_opened', { plan_selected: planFromUrl });
-      });
-      close.addEventListener('click', () => modal.hidden = true);
-      modal.addEventListener('click', (e) => { if (e.target === modal) modal.hidden = true; });
+    const closeBtn = document.getElementById('modal-close');
+
+    function openModal() {
+      if (!modal) return;
+      modal.hidden = false;
+      document.body.style.overflow = 'hidden';
+      capture('funnel_page3_modal_opened', { plan_selected: planFromUrl });
     }
+    function closeModal() {
+      if (!modal) return;
+      modal.hidden = true;
+      document.body.style.overflow = '';
+    }
+
+    if (why) {
+      why.addEventListener('click', (e) => { e.preventDefault(); openModal(); });
+    }
+    if (closeBtn) {
+      closeBtn.addEventListener('click', (e) => { e.preventDefault(); closeModal(); });
+    }
+    if (modal) {
+      modal.addEventListener('click', (e) => {
+        // Close on any click that isn't inside the inner card
+        if (!e.target.closest('.reserve-modal-inner')) closeModal();
+      });
+    }
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && modal && !modal.hidden) closeModal();
+    });
 
     // ---- Google Form embed setup ----
     // After creating the form (see GOOGLE_FORMS_SETUP.md), paste:

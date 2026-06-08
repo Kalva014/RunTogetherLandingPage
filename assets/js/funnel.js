@@ -33,6 +33,13 @@ function capture(event, props) {
   if (window.posthog) window.posthog.capture(event, merged);
 }
 
+// Meta Pixel helper — fires fbq() if Pixel loaded. Safe no-op if not.
+function fbqTrack(event, params) {
+  if (typeof window.fbq === 'function') {
+    window.fbq('track', event, params || {});
+  }
+}
+
 function buildLinkWithParams(href) {
   // Append current UTMs to internal links so signal carries across pages
   const utms = getAllUTMs();
@@ -67,6 +74,8 @@ document.addEventListener('DOMContentLoaded', () => {
           position: btn.dataset.position || 'top',
           time_on_page_sec: timeOnPage()
         });
+        // Meta: signal intent — InitiateCheckout standard event
+        fbqTrack('InitiateCheckout', { value: 9.99, currency: 'USD' });
       });
     });
 
@@ -80,11 +89,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.querySelectorAll('[data-event="funnel_page2_plan_clicked"]').forEach(btn => {
       btn.addEventListener('click', () => {
+        const plan = btn.dataset.plan;
         capture('funnel_page2_plan_clicked', {
-          plan: btn.dataset.plan,
+          plan,
           time_on_page_sec: timeOnPage()
         });
-        sessionStorage.setItem('rt_plan', btn.dataset.plan);
+        sessionStorage.setItem('rt_plan', plan);
+        // Meta: high-intent — AddToCart w/ plan value
+        fbqTrack('AddToCart', {
+          value: plan === 'annual' ? 49.99 : 9.99,
+          currency: 'USD',
+          content_name: plan,
+          content_category: 'subscription'
+        });
       });
     });
 
@@ -105,6 +122,11 @@ document.addEventListener('DOMContentLoaded', () => {
         : 'Annual · $49.99/yr · 30-day trial';
     }
     capture('funnel_page3_view', { plan_selected: planFromUrl });
+    // Meta: ViewContent for retargeting + funnel attribution
+    fbqTrack('ViewContent', {
+      content_name: 'reserve_page',
+      content_category: planFromUrl
+    });
 
     // Modal removed — reframed Page 3 as direct waitlist join.
 
